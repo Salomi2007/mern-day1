@@ -3,425 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>After Login - Dashboard</title>
+    <title>Home - Dashboard</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f7f7f7;
-        }
-
-        header {
-            background: #6a0dad;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav a {
-            color: #fceaff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: yellow;
-        }
-
-        main {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        h1, h2, h3 {
-            color: #4a148c;
-        }
-
-        .box {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        abbr {
-            border-bottom: 1px dotted;
-            text-decoration: none;
-            cursor: help;
-        }
-
-        del {
-            color: red;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border: 1px solid gray;
-        }
-
-        button {
-            width: 100%;
-            padding: 12px;
-            background: #6a0dad;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #520a9c;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        table, th, td {
-            border: 1px solid #999;
-        }
-
-        th {
-            background: #6a0dad;
-            color: white;
-            padding: 10px;
-        }
-
-        td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        .Border {
-            border-style: solid;
-            border-width: 5px;
-            border-color: red;
-            border-top-style: dotted;
-            padding: 10px;
-            margin: 10px 0;
-        }
-
-        /* Text alignment classes */
-        .left { text-align: left; }
-        .center { text-align: center; }
-        .right { text-align: right; }
-
-        /* Prevent text breaking */
-        .nowrap { white-space: nowrap; }
-
-        marquee {
-            background: #ffeb3b;
-            padding: 10px;
-            color: #4a148c;
-            font-weight: bold;
-        }
-
-        iframe {
-            border: 2px solid #6a0dad;
-            border-radius: 10px;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Welcome to Dashboard</h1>
-    <nav>
-        <a href="#chapters">Chapters</a>
-        <a href="#contact">Contact</a>
-        <a href="#top">Back to Top</a>
-    </nav>
-</header>
-
-<main id="top">
-
-    <!-- Text Formatting Section -->
-    <section class="box">
-        <h2>Text Formatting</h2>
-        <p>Lorem ipsum <u>underlined</u> word, <mark>highlighted</mark> word, and <b>bolded</b> word.</p>
-        <p>
-            Abbreviation: 
-            <abbr title="HyperText Markup Language">HTML</abbr>
-        </p>
-        <p>Press Ctrl+C to copy — H<sub>2</sub>O 10<sup>2</sup> = 100</p>
-        <p>Date: <time>August 20, 2025</time></p>
-        <p><small>Note: Terms and conditions apply</small></p>
-        <p>Example: <del>Old Price Rs.500</del> New Price Rs.400 only!</p>
-    </section>
-
-    <!-- Multiple Spaces & No Wrapping -->
-    <section class="box">
-        <h2>Text Example</h2>
-        <p class="nowrap">Mr&nbsp;Ravi is attending the class.</p>
-        <p>Multiple&nbsp;&nbsp;&nbsp;&nbsp;Spaces preserved</p>
-        <p>Department: "AIDS"</p>
-        <p>
-            Address:<br>
-            123, Green Park Road,<br>
-            Coimbatore - 641014,<br>
-            Tamil Nadu, India
-        </p>
-    </section>
-
-    <!-- Lists Section -->
-    <section class="box">
-        <h2>Lists</h2>
-        <h3>Unordered List</h3>
-        <ul>
-            <li>Apple</li>
-            <li>Banana</li>
-            <li>Mango</li>
-        </ul>
-
-        <h3>Ordered List (a, b, c)</h3>
-        <ol type="a">
-            <li>First Step</li>
-            <li>Second Step</li>
-            <li>Third Step</li>
-        </ol>
-
-        <h3>Description List</h3>
-        <dl>
-            <dt>HTML</dt>
-            <dd>HyperText Markup Language — used to create webpages.</dd>
-            <dt>CSS</dt>
-            <dd>Cascading Style Sheets — used for styling webpages.</dd>
-        </dl>
-    </section>
-
-    <!-- Image Section -->
-    <section class="box">
-        <h2>Image Example</h2>
-        <img src="C:/Users/salom/Pictures/download.jpeg" alt="Example Image" width="300">
-    </section>
-
-    <!-- Marquee -->
-    <section class="box">
-        <h2>Marquee Example</h2>
-        <marquee>Welcome to the Dashboard! Learn MERN and Web Development.</marquee>
-    </section>
-
-    <!-- iFrame Section -->
-    <section class="box">
-        <h2>Video iFrame</h2>
-        <p>Click below to watch Sundar Pichai videos:</p>
-        <a href="https://www.youtube.com/embed/0sJEy-rG0J0" target="videoFrame">Sundar Pichai Video 1</a><br>
-        <a href="https://www.youtube.com/embed/8tVt_T0p0sQ" target="videoFrame">Sundar Pichai Video 2</a><br><br>
-        <iframe name="videoFrame" width="560" height="315"></iframe>
-    </section>
-
-    <!-- Chapters with Internal Linking -->
-    <section class="box" id="chapters">
-        <h2>Chapters</h2>
-        <ul>
-            <li><a href="#chapter1">Chapter 1</a></li>
-            <li><a href="#chapter2">Chapter 2</a></li>
-            <li><a href="#chapter3">Chapter 3</a></li>
-        </ul>
-
-        <h3 id="chapter1" class="left">Chapter 1</h3>
-        <p class="left">This is the content of chapter 1. Text aligned left.</p>
-
-        <h3 id="chapter2" class="center">Chapter 2</h3>
-        <p class="center">This is the content of chapter 2. Text aligned center.</p>
-
-        <h3 id="chapter3" class="right">Chapter 3</h3>
-        <p class="right">This is the content of chapter 3. Text aligned right.</p>
-
-        <p><a href="#top">Back to Top</a></p>
-    </section>
-
-    <!-- Borders -->
-    <section class="box">
-        <h2>Border Example</h2>
-        <div class="Border">This div has a red solid border with dotted top border.</div>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="box" id="contact">
-        <h2>Contact Form</h2>
-        <form>a<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Home - Full Features</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: "Poppins", sans-serif;
             background: #f2f0ff;
         }
 
-        /* HEADER */
+        /* HEADER / HERO */
         header {
-            background: #6a0dad;
+            background: linear-gradient(to right, #6a0dad, #d9a7c7);
             color: white;
-            padding: 15px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 3px 7px rgba(0,0,0,0.2);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-
-        nav a {
-            margin: 0 12px;
-            text-decoration: none;
-            font-weight: 600;
-            color: #fceaff;
-        }
-
-        nav a:hover {
-            color: yellow;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            background: linear-gradient(to right, #d9a7c7, #fffcdc);
             text-align: center;
-            padding: 100px 20px;
+            padding: 80px 20px;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
         }
 
-        .hero h2 {
-            font-size: 36px;
+        header h1 {
+            font-size: 48px;
             margin-bottom: 15px;
         }
 
-        .hero p {
-            font-size: 18px;
-            line-height: 1.6;
+        header p {
+            font-size: 20px;
+            line-height: 1.5;
         }
 
-        /* MAIN SECTIONS */
+        /* MAIN CONTENT */
         main {
-            max-width: 1100px;
-            margin: 30px auto;
+            max-width: 1000px;
+            margin: 40px auto;
             padding: 0 20px;
-        }
-
-        .section {
-            background: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-        }
-
-        /* Text formatting */
-        u { text-decoration: underline; }
-        mark { background: yellow; }
-        b { font-weight: bold; }
-        abbr { border-bottom: 1px dotted; cursor: help; }
-
-        /* Input & Buttons */
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            margin: 8px 0;
-            border-radius: 6px;
-            border: 1px solid #999;
-        }
-
-        button {
-            width: 100%;
-            padding: 12px;
-            border-radius: 6px;
-            border: none;
-            background: #6a0dad;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #520a9c;
-        }
-
-        /* Lists */
-        ol[type="a"] { padding-left: 20px; }
-        ul { padding-left: 20px; }
-        dl dt { font-weight: bold; }
-        dl dd { margin: 0 0 10px 20px; }
-
-        /* Tables */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-
-        th, td {
-            border: 1px solid #999;
-            padding: 10px;
             text-align: center;
         }
 
-        th { background: #6a0dad; color: white; }
-
-        /* Borders */
-        .Border {
-            border: solid 5px red;
-            border-top-style: dotted;
-            padding: 12px;
-            margin: 15px 0;
-        }
-
-        /* Text alignment */
-        .left { text-align: left; }
-        .center { text-align: center; }
-        .right { text-align: right; }
-
-        /* Prevent text wrapping */
-        .nowrap { white-space: nowrap; }
-
-        /* Marquee */
-        marquee {
-            background: #ffeb3b;
-            padding: 10px;
+        main h2 {
+            font-size: 32px;
             color: #4a148c;
-            font-weight: bold;
             margin-bottom: 15px;
         }
 
-        /* Images */
-        .img-box img {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 12px;
-        }
-
-        /* iFrame */
-        iframe {
-            width: 100%;
-            max-width: 560px;
-            height: 315px;
-            border: 2px solid #6a0dad;
-            border-radius: 10px;
+        main p {
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         /* FOOTER */
@@ -429,70 +55,44 @@
             background: #333;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background: #6a0dad;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #520a9c;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Dashboard Home</h1>
-    <nav>
-        <a href="#hero">Home</a>
-        <a href="#sections">Sections</a>
-        <a href="#contact">Contact</a>
-        <a href="#top">Top</a>
-    </nav>
+    <h1>Welcome to Your Dashboard</h1>
+    <p>Your journey into web development and MERN stack starts here!</p>
+    <a href="#main-content" class="btn">Explore</a>
 </header>
 
-<!-- HERO SECTION -->
-<section class="hero" id="hero">
-    <h2>Welcome to Your Dashboard</h2>
-    <p>Learn Web Development, MERN Stack, and HTML/CSS concepts in a practical, interactive way.</p>
-</section>
+<main id="main-content">
+    <h2>About This Dashboard</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus tempore debitis voluptatem doloremque eligendi similique blanditiis officiis cupiditate facilis, earum vero laborum. Autem delectus omnis numquam doloribus, aspernatur distinctio veritatis!</p>
+    <p>Use this space to add updates, announcements, or important links for users.</p>
+</main>
 
-<main id="sections">
+<footer>
+    © 2025 Dashboard Home | All Rights Reserved
+</footer>
 
-    <!-- Marquee -->
-    <marquee>🔥 Welcome! Explore HTML, CSS, JavaScript & MERN Stack concepts in one page 🔥</marquee>
-
-    <!-- Text Formatting -->
-    <section class="section">
-        <h2>Text Formatting Examples</h2>
-        <p>This is <u>underlined</u>, <mark>highlighted</mark>, and <b>bold</b> text.</p>
-        <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
-        <p>Press Ctrl+C to copy — H<sub>2</sub>O 10<sup>2</sup> = 100</p>
-        <p>Date: <time>August 20, 2025</time></p>
-        <p>Example: <del>Old Price Rs.500</del> New Price Rs.400 only!</p>
-    </section>
-
-    <!-- Lists -->
-    <section class="section">
-        <h2>Lists</h2>
-        <h3>Unordered List</h3>
-        <ul>
-            <li>Apple</li>
-            <li>Banana</li>
-            <li>Mango</li>
-        </ul>
-
-        <h3>Ordered List (a,b,c)</h3>
-        <ol type="a">
-            <li>Step One</li>
-            <li>Step Two</li>
-            <li>Step Three</li>
-        </ol>
-
-        <h3>Description List</h3>
-        <dl>
-            <dt>HTML</dt>
-            <dd>HyperText Markup Language - webpage creation</dd>
-            <dt>CSS</dt>
-            <dd>Cascading Style Sheets - styling webpages</dd>
-        </dl>
-    <
-
-            <input type="text" placeholder="Enter Name" required>
-            <input type="email" placeholder="Enter Email" required>
-            <input type="radio" name="gender" value="Male"> Male
-            <input type="radio" name="gender"
+</body>
+</html>
