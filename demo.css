@@ -1,0 +1,30 @@
+.one{
+    font-size: 50;
+    color: rgb(42, 183, 234);
+    background-color: rgba(61, 21, 191, 0);
+    
+}
+.second{
+    font-size: 50;
+    color: rgb(17, 98, 135);
+    background-color: rgb(204, 240, 196);
+    
+}
+body{
+    text-align:center
+}
+div p{
+     
+     color: rgb(21, 214, 69);
+}
+.left {
+    text-align: left;
+}
+
+.justify {
+    text-align:justify;
+}
+
+.right {
+    text-align: right;
+}
