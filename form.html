@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Contact Form</h2>
+
+<form>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+    <label for="age">age:</label>
+    <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
+    <!-- Gender -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label>
+    <br><br>
+
+    <!-- Hobbies -->
+    <label>Hobbies:</label>
+    <input type="checkbox" id="reading" name="hobby" value="Reading">
+    <label for="reading">Reading</label>
+
+    <input type="checkbox" id="sports" name="hobby" value="Sports">
+    <label for="sports">Sports</label>
+
+    <input type="checkbox" id="music" name="hobby" value="Music">
+    <label for="music">Music</label>
+    <br><br>
+
+    <!-- Message -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"placeholder="type your message here" rows="5" cols="40"></textarea>
+    <br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+</form>
+<hr>
+<hr>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+    <!-- Name -->
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <!-- Password -->
+    <label>Password:</label><br>
+    <input type="password" name="password" required><br><br>
+
+    <!-- Phone -->
+    <label>Phone Number:</label><br>
+    <input type="tel" name="phone" maxlength="10" required><br><br>
+
+    <!-- Upload File -->
+    <label>Upload File:</label><br>
+    <input type="file" name="upload"><br><br>
+
+    <!-- Date -->
+    <label>Select Date:</label><br>
+    <input type="date" name="mydate"><br><br>
+
+    <!-- Time -->
+    <label>Select Time:</label><br>
+    <input type="time" name="mytime"><br><br>
+
+    <!-- Date & Time -->
+    <label>Select Date & Time:</label><br>
+    <input type="datetime-local" name="dt"><br><br>
+
+    <!-- Month -->
+    <label>Select Month:</label><br>
+    <input type="month" name="month"><br><br>
+
+    <!-- Week -->
+    <label>Select Week:</label><br>
+    <input type="week" name="week"><br><br>
+
+    <!-- Dropdown -->
+    <label>Select Course:</label><br>
+    <select name="course">
+        <option value="">-- Select Course --</option>
+        <option value="c">C Programming</option>
+        <option value="cpp">C++</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="html">HTML & CSS</option>
+    </select>
+    <br><br>
+
+    <!-- Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <button type="button" onclick="document.querySelector('form').reset();">Clear</button>
+
+</form><hr><hr>
+<table border="1" cellpadding="8" cellspacing="1">
+  <tr>
+    
+    <th colspan="2" >student name</th>
+    <th>department</th>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>salomi</td>
+    <td>AIDS</td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>preethika</td>
+    <td rowspan="2">AIML</td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td>roveena</td>
+    
+  </tr> 
+
+</table>
+</body>
+
+</body>
+</html>
