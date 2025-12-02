@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #d9a7c7, #fffcdc);
+            font-family: Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.95);
+            width: 320px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        .box h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .field {
+            width: 100%;
+            padding: 10px;
+            margin: 12px 0;
+            border: 2px solid #b8b8b8;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #4a148c;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #6a1b9a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>User Login</h2>
+        <form action="home.html">
+            <input type="text" class="field" placeholder="Username" required>
+            <input type="password" class="field" placeholder="Password" required>
+            <button class="btn" type="submit">Sign In</button>
+        </form>
+    </div>
+
+</body>
+</html>
