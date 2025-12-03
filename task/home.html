@@ -1,79 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Dashboard</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f8f5ff;
-        }
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
 
-        header {
-            background: #6a0dad;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
+<script>
+  // Enable dark mode via class
+  tailwind.config = { darkMode: 'class' }
+</script>
 
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 0 20px;
-            line-height: 1.7;
-        }
-
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-        }
-    </style>
 </head>
-<body>
+<body class="transition-colors
+             bg-blue-200 sm:bg-green-200 md:bg-yellow-200 lg:bg-purple-300
+             dark:bg-gray-900 text-gray-900 dark:text-gray-100">
 
-<header>
-    <h1>Welcome to Your Dashboard</h1>
-    <p>You have successfully logged in.</p>
+<!-- Toggle -->
+<button id="themeToggle" class="absolute top-5 right-5 px-4 py-2 bg-gray-800 text-white rounded-md dark:bg-white dark:text-black">
+  Toggle Mode
+</button>
+
+<header class="bg-purple-700 dark:bg-purple-900 text-white text-center py-12">
+  <h1 class="text-3xl font-bold">Welcome to Your Dashboard</h1>
+  <p class="mt-2">You have successfully logged in.</p>
 </header>
 
-<main>
-    <h2>About This Dashboard</h2>
-    <p>
-        This dashboard page contains all the basic information you need 
-        after logging in. Here you can add your own topics, notes,
-        learning updates, and progress details.
-    </p>
-
-    <h2>Today's Summary</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Repellendus, molestiae, aliquam! Doloremque cum fugiat corrupti 
-        autem veniam voluptate laboriosam modi.
-    </p>
-
-    <h2>Announcements</h2>
-    <p>
-        New sessions will be conducted this week. More information will be updated soon.
-    </p>
-
-    <h2>Upcoming Tasks</h2>
-    <p>
-        - Complete HTML assignment  
-        - Practice CSS layouts  
-        - Revise JavaScript basics  
-        - Prepare for next week’s project
-    </p>
+<main class="max-w-4xl mx-auto p-6 space-y-8">
+  <section>
+    <h2 class="text-2xl font-semibold mb-2">About This Dashboard</h2>
+    <p>This dashboard contains all the information you need after logging in.</p>
+  </section>
+  <section>
+    <h2 class="text-2xl font-semibold mb-2">Today's Summary</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </section>
+  <section>
+    <h2 class="text-2xl font-semibold mb-2">Announcements</h2>
+    <p>New sessions will be conducted this week. Updates coming soon.</p>
+  </section>
+  <section>
+    <h2 class="text-2xl font-semibold mb-2">Upcoming Tasks</h2>
+    <ul class="list-disc list-inside space-y-1">
+      <li>Complete HTML assignment</li>
+      <li>Practice CSS layouts</li>
+      <li>Revise JavaScript basics</li>
+      <li>Prepare for next week's project</li>
+    </ul>
+  </section>
 </main>
 
-<footer>
-    © 2025 Dashboard | All Rights Reserved
+<footer class="bg-gray-800 dark:bg-gray-900 text-white text-center py-4 mt-8">
+  © 2025 Dashboard | All Rights Reserved
 </footer>
+
+<script>
+  const toggleBtn = document.getElementById('themeToggle');
+  toggleBtn.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+  });
+</script>
 
 </body>
 </html>

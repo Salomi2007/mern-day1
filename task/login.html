@@ -1,62 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Login</title>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #d9a7c7, #fffcdc);
-            font-family: Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .box {
-            background: rgba(255, 255, 255, 0.95);
-            width: 320px;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        }
-
-        .field {
-            width: 100%;
-            padding: 10px;
-            margin: 12px 0;
-            border: 2px solid #b8b8b8;
-            border-radius: 6px;
-        }
-
-        .btn {
-            width: 100%;
-            padding: 12px;
-            background: #4a148c;
-            border: none;
-            color: white;
-            font-size: 16px;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="flex items-center justify-center min-h-screen
+             bg-pink-200    /* default for small screens */
+             sm:bg-yellow-200   /* small screens and up */
+             md:bg-green-200   /* medium screens and up */
+             lg:bg-purple-200  /* large screens and up */
+             transition-colors">
 
-    <div class="box">
-        <h2>User Login</h2>
+  <!-- Login Box -->
+  <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg w-80">
+    <h2 class="text-2xl font-bold mb-6 text-center dark:text-white">User Login</h2>
 
-        <!-- connect to home.html -->
-        <form action="home.html">  
-            <input type="text" class="field" placeholder="Username" required>
-            <input type="password" class="field" placeholder="Password" required>
-            <button class="btn" type="submit">Sign In</button>
-        </form>
-    </div>
+    <form action="home.html" class="flex flex-col">
+      <input type="text" placeholder="Username" class="mb-4 p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-700 dark:text-white dark:border-gray-600" required>
+      <input type="password" placeholder="Password" class="mb-6 p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-700 dark:text-white dark:border-gray-600" required>
+      <button type="submit" class="bg-purple-700 text-white py-3 rounded hover:bg-purple-600 transition-colors">Sign In</button>
+    </form>
+  </div>
 
 </body>
 </html>
